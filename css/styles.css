@@ -14,13 +14,25 @@
 }
 
 
-
-
 a {
     text-decoration: none;
 }
 .list {
     list-style: none;
+}
+h1,h2,h3,h4,h5,h6,
+p,ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1152px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .visually-hidden {
@@ -83,10 +95,15 @@ body {
 .navigation-list {
     font-weight: 500;
     font-size: 16px;
-        line-height: 24px;
+    line-height: 24px;
     letter-spacing: 0.02em;
-color: var(--headline-color);
+    color: var(--headline-color);
 }
+
+.address-list{
+
+}
+
 .active-page {
     color: var(--logo-style-color);
 }
@@ -104,6 +121,8 @@ color: var(--headline-color);
     color: var(--logo-style-color)
 }
 
+.address-list {
+}
 
 .address-item {
     font-style: normal;
@@ -167,7 +186,7 @@ color: var(--headline-color);
     color: var(--secondary-color);
 }
 .footer {
-    background-color: var(--headline-color)
+    background-color: var(--headline-color); 
 }
 
 .footer-text {
@@ -197,6 +216,7 @@ color: var(--headline-color);
     letter-spacing: 0.04em;
     color: var(--simple-white);
     background-color: var(--logo-style-color);
+    margin-left: 480px;
 }
 .headline-section-button:hover,
 .headline-section-button:focus {
@@ -204,6 +224,10 @@ color: var(--headline-color);
 }
 
 /* Our Qualities */
+
+.qualities-list {
+
+}
 
 .title-secondary-level {
     font-size: 36px;
@@ -226,3 +250,4 @@ color: var(--headline-color);
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
+
