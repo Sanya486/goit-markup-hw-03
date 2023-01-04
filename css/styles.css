@@ -209,18 +209,24 @@ body {
     color: var(--simple-white);
 }
 .headline-section-button {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    align-items: center;
     letter-spacing: 0.04em;
     color: var(--simple-white);
     background-color: var(--logo-style-color);
-    margin-left: 480px;
+   
 }
 .headline-section-button:hover,
 .headline-section-button:focus {
     background-color:var(--button-color) ;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
 }
 
 /* Our Qualities */
