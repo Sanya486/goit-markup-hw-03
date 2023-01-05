@@ -27,6 +27,10 @@ p,ul {
     padding: 0;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+}
 .container {
     width: 1152px;
     padding-left: 12px;
@@ -56,6 +60,10 @@ body {
 }
 
 /* logo */
+
+.logo{
+    margin-right: 76px;
+}
 
 .logo-first-part {
     font-family: 'Raleway';
@@ -92,7 +100,12 @@ body {
 /* Portfolio page */
 /* Navigation */
 
+.navigation {
+    display: flex;
+    align-items: center;
+}
 .navigation-list {
+    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -100,8 +113,24 @@ body {
     color: var(--headline-color);
 }
 
-.address-list{
+.navigation-list .nav-link {
+    display: inline-block;
+    padding: 24px 0;
+}
+.navigation-list .item+.item{
+    margin-left: 40px;
+}
 
+.address {
+    display: flex;
+    margin-left: auto;
+}
+.address-list{
+    display: flex;
+}
+
+.address-list .item+.item {
+    margin-left: 40px;
 }
 
 .active-page {
@@ -110,7 +139,7 @@ body {
 
 .active-page:hover,
 .active-page:focus {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .other-page{
@@ -123,6 +152,8 @@ body {
 
 .address-list {
 }
+
+
 
 .address-item {
     font-style: normal;
@@ -199,9 +230,15 @@ body {
 /* Main page */
 
 .headline-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: var(--headline-color);
+    height: 600px;
+    margin-bottom: 120px;
 }
 .headline-section-title {
+    margin-bottom: 48px;
     font-size: 56px;
     line-height: 60px;
     text-align: center;
@@ -232,8 +269,19 @@ body {
 /* Our Qualities */
 
 .qualities-list {
+    display: flex;
+    margin-bottom: 120px;
 
 }
+
+.qualities-list .list-item{
+    width: 264px;
+}
+
+.qualities-list .list-item +.list-item{
+    margin-left: 24px;
+}
+
 
 .title-secondary-level {
     font-size: 36px;
@@ -249,6 +297,7 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--headline-color);
+    margin-bottom: 8px;
 }
 .paragraph{
     font-size: 16px;
