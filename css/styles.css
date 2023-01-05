@@ -268,30 +268,7 @@ body {
 
 /* Our Qualities */
 
-.qualities-list {
-    display: flex;
-    margin-bottom: 120px;
-
-}
-
-.qualities-list .list-item{
-    width: 264px;
-}
-
-.qualities-list .list-item +.list-item{
-    margin-left: 24px;
-}
-
-
-.title-secondary-level {
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--headline-color);
-}
-.title-third-level {
+.qualities-list .title {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -299,10 +276,118 @@ body {
     color: var(--headline-color);
     margin-bottom: 8px;
 }
-.paragraph{
+
+.qualities-list .text {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
 
+.qualities-list {
+    display: flex;
+    margin-bottom: 120px;
+
+}
+
+.qualities-list .list{
+    width: 264px;
+}
+
+.qualities-list .list +.list{
+    margin-left: 24px;
+}
+
+/* What are we doing */
+
+.works{
+    margin-bottom: 120px;
+}
+
+.works-list {
+    display: flex;
+}
+.works-list .list +.list{
+    margin-left: 24px;
+}
+
+/* Our team */
+
+.our-team-title{
+}
+
+.ourt-team-container{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.our-team{
+    background-color:var(--logo-footer-color);
+}
+
+.our-team-list {
+    display: flex;
+}
+
+.our-team-list .list + .list{
+    margin-left: 24px;
+}
+
+.our-team-list .title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--headline-color);
+    margin-bottom: 8px;
+}
+
+.our-team-list .text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color);
+
+}
+/* footer */
+
+.footer {
+    min-height: 310px;
+}
+
+
+
+
+/* Utilities */
+
+.title-secondary-level {
+    margin-bottom: 72px;
+
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--headline-color);
+}
+
+
+
+
+/* .img-team{
+    box-shadow: 0px 1px 6px;
+    border-radius: 0px 0px 4px 4px;
+} */
+
+.card-border{
+    background-color:#FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+border-radius: 0px 0px 4px 4px;
+}
+
+.card-border .description {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
