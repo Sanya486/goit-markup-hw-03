@@ -30,6 +30,7 @@ p,ul {
 .header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 .container {
     width: 1152px;
@@ -140,6 +141,8 @@ body {
 .active-page:hover,
 .active-page:focus {
     color: var(--secondary-color);
+    margin-bottom: -5px;
+    border-bottom: 5px solid var(--logo-style-color);
 }
 
 .other-page{
@@ -147,7 +150,9 @@ body {
 }
 .other-page:hover,
 .other-page:focus {
-    color: var(--logo-style-color)
+    color: var(--logo-style-color);
+    margin-bottom: -5px;
+    border-bottom: 5px solid var(--logo-style-color);
 }
 
 .address-list {
@@ -202,12 +207,34 @@ body {
     background-color: var(--simple-white);
 }
 
+.filter .list {
+    display: flex;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    justify-content: center;
+}
+
+.filter .filter-item-first,
+.filter .filter-item{
+    padding: 12px 24px;
+}
+
+.filter .item +.item{
+    margin-left: 24px;
+}
+
+/* Example of works */
+.examples{
+    margin-bottom: 120px;
+}
+
 .examples-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--headline-color);
+    margin-bottom: 8px;
 }
 
 .example-type {
@@ -216,6 +243,27 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 }
+
+.examples .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    
+}
+.examples .item {
+    flex-basis: calc((100% - 48px) / 3);
+    border: 1px solid #E7E9FC;
+    margin: -1px;
+}
+.examples .text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+
+/* footer portfolio */
+
 .footer {
     background-color: var(--headline-color); 
 }
