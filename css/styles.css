@@ -9,7 +9,7 @@
 
     --button-color: #404BBF;
     --logo-footer-color: #F4F4FD;
-    --simple-white:#fff
+    --simple-white:#fff;
 
 }
 
@@ -178,6 +178,10 @@ body {
 
 /* filter */
 
+.filter{
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .filter-item-first {
     font-family: inherit;
     font-weight: 500;
@@ -207,28 +211,27 @@ body {
 
 .filter-item:hover,
 .filter-item:focus {
-    background-color: var(--simple-white);
+    color:var(--simple-white);
+    background-color: var(--button-color);
 }
 
-.filter .list {
+.filter-list {
     display: flex;
-    margin-top: 96px;
     margin-bottom: 72px;
     justify-content: center;
 }
 
-.filter .filter-item-first,
 .filter .filter-item{
     padding: 12px 24px;
 }
 
-.filter .item +.item{
+.filter .filter-list .item +.item{
     margin-left: 24px;
 }
 
 /* Example of works */
 .examples{
-    margin-bottom: 120px;
+    
 }
 
 .examples-title {
@@ -247,21 +250,25 @@ body {
     color: var(--secondary-color);
 }
 
-.examples .list {
+.examples-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 48px;
+    column-gap: 24px;
     
 }
-.examples .item {
-    flex-basis: calc((100% - 48px) / 3);
-    border: 1px solid #E7E9FC;
-    margin: -4px; 
-}
-.examples .text {
+
+.examples-list .text {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    border-bottom: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+}
+.examples-list {
+    display:flex;
+    flex-basis: calc((100%-48)/3);
 }
 
 
@@ -422,7 +429,7 @@ body {
 .description {
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 /* footer */
